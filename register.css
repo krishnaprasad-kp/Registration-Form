@@ -1,0 +1,21 @@
+.formblock{
+    margin:30px;
+    padding:10px;
+    background-color: #d3d3d3;
+}
+.field{
+    margin-top: 5px;
+}
+.fieldvalue{
+    margin-top: 3px;
+}
+
+
+input[type=reset]{
+    color: #ffffff;
+    background-color: #808080;
+}input[type=submit]{
+    color: #ffffff;
+    background-color: #0000ff;
+}
+
