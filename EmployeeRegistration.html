@@ -1,0 +1,101 @@
+<html>
+
+<head>
+    <title>Employee Form</title>
+    <link href="register.css" rel="stylesheet" type="text/css">
+
+
+</head>
+
+<body onload="DisplayEmployeeDetails()" >
+    <form id="registrationForm" onsubmit="AddEmployee()">
+        <div class="formblock">
+            <h2 align="center"> EMPLOYEE REGISTRATION </h2>
+            <div class="field">
+                <label>First Name</label>
+            </div>
+            <div class="fieldvalue">
+                <input type="textfield" name="FirstName">
+            </div>
+            <div class="field">
+                <label>Last Name</label>
+            </div>
+            <div class="fieldvalue">
+                <input type="textfield" name="LastName">
+            </div>
+            <div class="field">
+                <label>Date Of Birth</label>
+            </div>
+            <div class="fieldvalue">
+                <input type="date" name="Dob">
+            </div>
+            <div class="field">
+                <label>Email Id</label>
+            </div>
+            <div class="fieldvalue">
+                <input type="textfield" name="Email">
+            </div>
+            <div class="field">
+                <label>Password</label>
+            </div>
+            <div class="fieldvalue">
+                <input type="password" name="Password">
+            </div>
+            
+            <div class="field">
+                <label>Gender</label>
+            </div>
+            <div class="fieldvalue">
+                <input type="radio" name="gender" value="male">Male
+                <input type="radio" name="gender" value="female">Female
+            </div>
+            <div class="field">
+                <label>Hobbies</label>
+            </div>
+            <div class="fieldvalue">
+                <input type="checkbox" name="hobbies" value="Playing Cricket">Playing Cricket<br />
+                <input type="checkbox" name="hobbies" value="Watching Movies">Watching Movies<br />
+                <input type="checkbox" name="hobbies" value="Painting">Painting<br />
+                <input type="checkbox" name="hobbies" value="Listening to music">Listening to music<br />
+                <input type="checkbox" name="hobbies" value="Writing Stories">Writing Stories<br />
+            </div>
+            <div class="field">
+                <label>Country</label>
+                <div class="fieldvalue">
+                    <select id="country" onchange="selectstate()" name="country">
+                        <option value="selectcountry">select country</option>
+                        <option value="India">India</option>
+                        <option value="Australia">Australia</option>
+                    </select>
+                </div>
+            </div>
+            <div class="field">
+                <label>State</label>
+                <div class="fieldvalue">
+                    <select id="state" name="state">
+                        <option value="selectstate">select state</option>
+                    </select>
+                </div>
+            </div>
+            <div class="field">
+
+                <label>Address</label>
+                <div class="fieldvalue">
+                    <textarea name="address"></textarea>
+                </div>
+            </div>
+            <div align="right">
+                <input type="reset"> &nbsp&nbsp&nbsp&nbsp&nbsp
+                <input type="submit">
+            </div>
+
+        </div>
+        
+    </form>
+    <p id="demo"><button onclick="AddEmployee()">Register</button></p>
+    <table id="employeelist" border="1">
+    </table>
+    <script src="register.js"></script>
+</body>
+
+</html>
